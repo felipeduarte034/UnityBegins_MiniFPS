@@ -12,9 +12,7 @@ public class Bullet : MonoBehaviour
 
     Transform m_tA;
     Transform m_tB;
-
     Vector3 m_Direction;
-
     Rigidbody rb;
 
     void Awake() //Primeira função a ser chamada - 
@@ -24,12 +22,12 @@ public class Bullet : MonoBehaviour
 
 	void Start() //Função chamada no primeiro quadro(Frame) do jogo
 	{
-		m_Direction = (m_tA.position - m_tB.position).normalized;
+		m_Direction = (m_tA.position - m_tB.position).normalized; //Calcula um vetor que contem a direção da arma;
 
 		Destroy(gameObject, m_LifeTimeBullet);
 	}
 
-    void FixedUpdate() //Usado para física
+    void FixedUpdate() //Loop usado para física
     {
         rb.velocity = m_Direction * m_Speed;
     }

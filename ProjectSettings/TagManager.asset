@@ -6,6 +6,9 @@ TagManager:
   tags:
   - PointA
   - PointB
+  - TextScore
+  - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX

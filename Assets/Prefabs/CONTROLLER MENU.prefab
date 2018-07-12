@@ -51,5 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46c40652ee1af2d4b934f18c2cee898f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DontDestroyLoad: 1
+  m_DontDestroyLoad: 0
   btPause: 112
+  panelPause: {fileID: 0}
+  m_Pause: 0
